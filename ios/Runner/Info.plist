@@ -55,13 +55,19 @@
 	<key>WebKitMediaPlaybackRequiresUserAction</key>
 	<false/>
 
-	<!-- ⚠️ ALLOW BACKGROUND AUDIO -->
+	<!-- ⚠️ ENABLE BACKGROUND AUDIO -->
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
 	</array>
 
 	<!-- ⚠️ ENABLE NATIVE PICTURE-IN-PICTURE -->
+	<key>UIAllowsPictureInPicturePlayback</key>
+	<true/>
+	<key>UIPictureInPicturePlayback</key>
+	<true/>
+
+	<!-- Audio session -->
 	<key>AVAudioSessionCategory</key>
 	<string>playback</string>
 	<key>AVAudioSessionCategoryOptions</key>
@@ -71,6 +77,10 @@
 		<string>allowBluetoothA2DP</string>
 		<string>allowAirPlay</string>
 	</array>
+
+	<!-- Optional but recommended for streaming stability -->
+	<key>UIRequiresPersistentWiFi</key>
+	<false/>
 
 	<!-- Better performance -->
 	<key>CADisableMinimumFrameDurationOnPhone</key>
