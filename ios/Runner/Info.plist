@@ -24,10 +24,13 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+
+	<!-- Allowed orientations -->
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -41,6 +44,35 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+
+	<!-- ⚠️ REQUIRED FOR PIP + INLINE VIDEO -->
+	<key>WebKitInlineMediaPlayback</key>
+	<true/>
+	<key>WebKitAllowsInlineMediaPlayback</key>
+	<true/>
+	<key>WebKitMediaPlaybackAllowsAirPlay</key>
+	<true/>
+	<key>WebKitMediaPlaybackRequiresUserAction</key>
+	<false/>
+
+	<!-- ⚠️ ALLOW BACKGROUND AUDIO -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+
+	<!-- ⚠️ ENABLE NATIVE PICTURE-IN-PICTURE -->
+	<key>AVAudioSessionCategory</key>
+	<string>playback</string>
+	<key>AVAudioSessionCategoryOptions</key>
+	<array>
+		<string>duckOthers</string>
+		<string>allowBluetooth</string>
+		<string>allowBluetoothA2DP</string>
+		<string>allowAirPlay</string>
+	</array>
+
+	<!-- Better performance -->
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

@@ -10,9 +10,8 @@ dependencies:
     sdk: flutter
 
   webview_flutter: ^4.7.0
-  flutter_inappwebview: ^6.1.5    # FIXED VERSION
-  pip_view: ^0.9.7
-  audio_session: ^0.2.2           # FIXED VERSION
+  flutter_inappwebview: ^6.1.5
+  audio_session: ^0.2.2
   permission_handler: ^11.3.0
   wakelock_plus: ^1.1.1
 
